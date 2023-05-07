@@ -7,13 +7,13 @@ import lombok.Setter;
 
 @Setter
 @Getter
-@AllArgsConstructor
 @NoArgsConstructor
-public class Specialty {
+@AllArgsConstructor
+public class DiseaseType {
     private int id;
     private String name;
 
-    public Specialty(String name) {
+    public DiseaseType(String name) {
         this.name = name;
     }
 }

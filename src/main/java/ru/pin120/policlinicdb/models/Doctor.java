@@ -14,6 +14,7 @@ public class Doctor {
     private String firstName;
     private String lastName;
     private String part;
+    private int workExp;
     private List<Specialty> specialties;
 
 //    public Doctor(int id, String firstName, String lastName, String part, String specialties) {
@@ -26,12 +27,13 @@ public class Doctor {
 //        this.specialties = specialties;
 //    }
 
-    public Doctor(String firstName, String lastName, String part, List<Specialty> specialties) {
+    public Doctor(String firstName, String lastName, String part, int workExp, List<Specialty> specialties) {
         this.firstName = firstName;
         this.lastName = lastName;
         if(part != null){
             this.part = part;
         }
+        this.workExp = workExp;
         this.specialties = specialties;
     }
 
