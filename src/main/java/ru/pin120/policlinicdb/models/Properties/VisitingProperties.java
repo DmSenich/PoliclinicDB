@@ -6,6 +6,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import lombok.Getter;
 import lombok.Setter;
+import ru.pin120.policlinicdb.models.Disease;
 import ru.pin120.policlinicdb.models.Visiting;
 
 @Getter
@@ -15,7 +16,7 @@ public class VisitingProperties {
     private IntegerProperty id;
     private IntegerProperty doctorId;
     private IntegerProperty patientId;
-    private StringProperty disease;
+    //private StringProperty disease;
     private StringProperty date;
 
     public VisitingProperties(Visiting visiting) {
@@ -23,7 +24,12 @@ public class VisitingProperties {
         this.id = new SimpleIntegerProperty(visiting.getId());
         this.patientId = new SimpleIntegerProperty(visiting.getPatientId());
         this.doctorId = new SimpleIntegerProperty(visiting.getDoctorId());
-        this.disease = new SimpleStringProperty(visiting.getDisease());
+//        String strDiseases = "";
+//        for (Disease disease:
+//             visiting.getDiseases()) {
+//            strDiseases
+//        }
+//        this.disease = new SimpleStringProperty(visiting.getDiseases());
         this.date = new SimpleStringProperty(visiting.getDate().toString());
     }
 

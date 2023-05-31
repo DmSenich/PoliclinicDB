@@ -7,7 +7,7 @@ import java.util.Collection;
 public interface VisitingService {
     Collection<Visiting> findAll();
     Visiting findOneById(int id);
-    void create(Visiting visiting);
-    void update(Visiting visiting);
-    void delete(Visiting visiting);
+    void create(int id, int doctorId, int patientId, String date);
+    void update(int id, int doctorId, int patientId, String date);
+    void delete(int id);
 }

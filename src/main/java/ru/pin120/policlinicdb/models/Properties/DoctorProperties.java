@@ -22,12 +22,12 @@ public class DoctorProperties {
         this.id = new SimpleIntegerProperty(doctor.getId());
         this.firstName = new SimpleStringProperty(doctor.getFirstName());
         this.lastName = new SimpleStringProperty(doctor.getLastName());
-        this.part = new SimpleStringProperty(doctor.getPart());
+        this.part = new SimpleStringProperty(doctor.getPatr());
         this.workExp = new SimpleIntegerProperty(doctor.getWorkExp());
-        for (Specialty spec: doctor.getSpecialties()
-             ) {
-            this.specialties.add(new SimpleStringProperty(spec.getName()));
-        }
+//        for (Specialty spec: doctor.getSpecialties()
+//             ) {
+//            this.specialties.add(new SimpleStringProperty(spec.getName()));
+//        }
         //this.specialties = new SimpleStringProperty(doctor.getSpecialties());
     }
 

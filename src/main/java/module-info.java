@@ -3,6 +3,7 @@ module ru.pin120.policlinicdb {
     requires javafx.fxml;
     requires lombok;
     requires java.sql;
+    requires org.junit.jupiter.api;
 
 
     opens ru.pin120.policlinicdb to javafx.fxml;

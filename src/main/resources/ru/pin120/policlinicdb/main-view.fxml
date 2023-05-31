@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.pin120.policlinicdb.MainController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Добавить">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onAddDoctorClick" text="Доктор" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddPatientClick" text="Пациент" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddDiseaseTypeClick" text="Тип заболевания" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddSpecialtyClick" text="Специализация" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddVisitingClick" text="Прием" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Список">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -5,9 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.xml.stream.events.StartElement;
-import java.util.Date;
-
 @Setter
 @Getter
 @NoArgsConstructor
@@ -16,8 +13,8 @@ public class Patient {
     private int id;
     private String firstName;
     private String lastName;
-    private String part;
-    private Date birthDate;
+    private String patr;
+    private String birthDate;
     private String area, city, house;
     private int apartment;
 
@@ -31,10 +28,10 @@ public class Patient {
 //        this.birthDate = birthDate;
 //    }
 
-    public Patient(String firstName, String lastName, String part, Date birthDate, String area, String city, String house, int apartment) {
+    public Patient(String firstName, String lastName, String patr, String birthDate, String area, String city, String house, int apartment) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.part = part;
+        this.patr = patr;
         this.birthDate = birthDate;
         this.area = area;
         this.city = city;

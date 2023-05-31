@@ -26,7 +26,7 @@ public class PatientProperties {
         this.id = new SimpleIntegerProperty(patient.getId());
         this.firstName = new SimpleStringProperty(patient.getFirstName());
         this.lastName = new SimpleStringProperty(patient.getLastName());
-        this.part = new SimpleStringProperty(patient.getPart());
+        this.part = new SimpleStringProperty(patient.getPatr());
         this.birthDate = new SimpleStringProperty(patient.getBirthDate().toString());
         this.area = new SimpleStringProperty(patient.getArea());
         this.city = new SimpleStringProperty(patient.getCity());

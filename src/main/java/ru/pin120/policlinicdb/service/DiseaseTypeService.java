@@ -8,7 +8,7 @@ import java.util.Collection;
 public interface DiseaseTypeService {
     Collection<DiseaseType> findAll();
     DiseaseType findOneById(int id);
-    void create(DiseaseType diseaseType);
-    void update(DiseaseType diseaseType);
-    void delete(DiseaseType diseaseType);
+    void create(String name);
+    void update(int id, String name);
+    void delete(int id);
 }

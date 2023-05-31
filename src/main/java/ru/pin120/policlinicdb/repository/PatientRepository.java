@@ -2,7 +2,8 @@ package ru.pin120.policlinicdb.repository;
 
 import ru.pin120.policlinicdb.models.Patient;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Optional;
 
 public interface PatientRepository {
     Collection<Patient> findAll();

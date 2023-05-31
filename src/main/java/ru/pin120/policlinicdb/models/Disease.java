@@ -12,10 +12,12 @@ import lombok.Setter;
 public class Disease {
     private int id;
     private int typeId;
+    private int visitingId;
     private String description;
 
-    public Disease(int typeId, String description) {
+    public Disease(int typeId, String description, int visitingId) {
         this.typeId = typeId;
         this.description = description;
+        this.visitingId = visitingId;
     }
 }

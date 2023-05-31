@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
+import java.util.List;
 
 @Setter
 @Getter
@@ -14,9 +14,11 @@ import java.util.Date;
 public class Visiting {
     private int id;
     private int doctorId;
+    //private Doctor doctor;
     private int patientId;
-    private String disease;
-    private Date date;
+    //private Patient patient;
+    //private List<Disease> diseases;
+    private String date;
 
 //    public Visiting(int id, int doctorId, int patientId, String disease, Date date) {
 //        this.id = id;
@@ -28,14 +30,37 @@ public class Visiting {
 //        this.date = date;
 //    }
 
-    public Visiting(int doctorId, int patientId, String disease, Date date) {
+//    public Visiting(Doctor doctor, Patient patient, String date, List<Disease> diseases) {
+//        this.doctor = doctor;
+//        this.doctorId = doctor.getId();
+//        this.patient = patient;
+//        this.patientId = patient.getId();
+//        this.diseases = diseases;
+//        this.date = date;
+//    }
+//    public Visiting(int id, Doctor doctor, Patient patient, String date, List<Disease> diseases) {
+//        this.id = id;
+//        this.doctor = doctor;
+//        this.doctorId = doctor.getId();
+//        this.patient = patient;
+//        this.patientId = patient.getId();
+//        this.diseases = diseases;
+//        this.date = date;
+//    }
+    public Visiting(int doctorId, int patientId, String date) {
         this.doctorId = doctorId;
         this.patientId = patientId;
-        if(disease != null){
-            this.disease = disease;
-        }
+        //this.diseases = diseases;
         this.date = date;
     }
+//    public Visiting(int id, int doctorId, int patientId, String date) {
+//        this.id = id;
+//        this.doctorId = doctorId;
+//        this.patientId = patientId;
+//        //this.diseases = diseases;
+//        this.date = date;
+//    }
+
 
 //    public int getId() {
 //        return id;

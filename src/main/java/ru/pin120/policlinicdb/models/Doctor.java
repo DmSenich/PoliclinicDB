@@ -1,6 +1,9 @@
 package ru.pin120.policlinicdb.models;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -13,9 +16,9 @@ public class Doctor {
     private int id;
     private String firstName;
     private String lastName;
-    private String part;
+    private String patr;
     private int workExp;
-    private List<Specialty> specialties;
+    //private List<Specialty> specialties;
 
 //    public Doctor(int id, String firstName, String lastName, String part, String specialties) {
 //        this.id = id;
@@ -27,14 +30,33 @@ public class Doctor {
 //        this.specialties = specialties;
 //    }
 
-    public Doctor(String firstName, String lastName, String part, int workExp, List<Specialty> specialties) {
+//    public Doctor(String firstName, String lastName, String part, int workExp, List<Specialty> specialties) {
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        if(part != null){
+//            this.patr = part;
+//        }
+//        this.workExp = workExp;
+//        this.specialties = specialties;
+//    }
+//    public Doctor(int id, String firstName, String lastName, String part, int workExp) {
+//        this.id = id;
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        if(part != null){
+//            this.patr = part;
+//        }
+//        this.workExp = workExp;
+//        //this.specialties = specialties;
+//    }
+
+    public Doctor(String firstName, String lastName, String patr, int workExp) {
         this.firstName = firstName;
         this.lastName = lastName;
-        if(part != null){
-            this.part = part;
+        if(patr != null){
+            this.patr = patr;
         }
         this.workExp = workExp;
-        this.specialties = specialties;
     }
 
 //    public int getId() {
